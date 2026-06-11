@@ -60,6 +60,26 @@ function Home() {
             understood portraiture and presentation.
           </p>
         </article>
+
+        <article>
+          <span className="section-number">04</span>
+          <h2>Life And Pain</h2>
+          <p>
+            A bus accident in 1925 left Kahlo with lasting injuries and long
+            periods of recovery. Painting from bed, she turned physical pain
+            into precise, symbolic images rather than hiding it from view.
+          </p>
+        </article>
+
+        <article>
+          <span className="section-number">05</span>
+          <h2>Political Voice</h2>
+          <p>
+            Kahlo was committed to leftist politics and moved through circles
+            of artists, activists, and intellectuals. Her clothing, home, and
+            paintings connected personal identity with public conviction.
+          </p>
+        </article>
       </section>
 
       <aside className="fact-strip" aria-label="Quick facts">

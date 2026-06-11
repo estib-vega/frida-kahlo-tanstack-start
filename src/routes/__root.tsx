@@ -1,5 +1,10 @@
 /// <reference types="vite/client" />
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+import {
+  HeadContent,
+  Link,
+  Scripts,
+  createRootRoute,
+} from '@tanstack/react-router'
 import * as React from 'react'
 import appCss from '~/styles/app.css?url'
 
@@ -60,6 +65,17 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <header className="site-header">
+          <Link to="/" activeOptions={{ exact: true }}>
+            Frida Kahlo
+          </Link>
+          <nav aria-label="Main navigation">
+            <Link to="/" activeOptions={{ exact: true }}>
+              Home
+            </Link>
+            <Link to="/paintings">Paintings</Link>
+          </nav>
+        </header>
         {children}
         <Scripts />
       </body>
