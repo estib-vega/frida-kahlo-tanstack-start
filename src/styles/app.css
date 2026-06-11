@@ -21,15 +21,52 @@ body {
     linear-gradient(180deg, #f9f1dd 0%, #efe0bf 100%);
 }
 
+a {
+  color: inherit;
+}
+
 img {
   display: block;
   width: 100%;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 22px 0 0;
+  color: #1f2520;
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.site-header nav a {
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  color: #5a4735;
+}
+
+.site-header nav a.active {
+  border-bottom-color: #d7472f;
+  color: #1d1a16;
+}
+
 .page-shell {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 28px 0 40px;
 }
 
 .hero {
@@ -155,7 +192,125 @@ article p,
   padding: 24px;
 }
 
+.paintings-page {
+  padding-top: 70px;
+}
+
+.paintings-hero {
+  max-width: 820px;
+  margin-bottom: 42px;
+}
+
+.paintings-hero h1 {
+  max-width: none;
+  font-size: clamp(4rem, 12vw, 8.5rem);
+}
+
+.paintings-list {
+  display: grid;
+  gap: 18px;
+}
+
+.painting-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  min-height: 230px;
+  padding: 0;
+  border: 1px solid rgba(80, 54, 36, 0.2);
+  border-top: 0;
+  background: rgba(255, 250, 238, 0.82);
+}
+
+.painting-mark {
+  display: grid;
+  min-height: 230px;
+  place-items: center;
+  overflow: hidden;
+  color: #fff8e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  position: relative;
+}
+
+.painting-mark::before,
+.painting-mark::after {
+  content: "";
+  position: absolute;
+  inset: 24px;
+  border: 4px solid rgba(255, 248, 232, 0.36);
+}
+
+.painting-mark::after {
+  inset: 56px 34px;
+  border-width: 2px;
+  transform: rotate(-8deg);
+}
+
+.painting-mark span {
+  position: relative;
+  z-index: 1;
+}
+
+.painting-mark-green {
+  background: #006a4e;
+}
+
+.painting-mark-red {
+  background: #d7472f;
+}
+
+.painting-mark-gold {
+  background: #c99013;
+}
+
+.painting-mark-blue {
+  background: #1e5b7b;
+}
+
+.painting-mark-rose {
+  background: #8f2d4b;
+}
+
+.painting-copy {
+  align-self: center;
+  padding: 30px 34px;
+}
+
+.painting-year {
+  margin-bottom: 10px;
+  color: #947c57;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.painting-copy h2 {
+  margin-bottom: 8px;
+  color: #6b1d16;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.painting-location {
+  margin-bottom: 18px;
+  color: #006a4e;
+  font-weight: 800;
+}
+
+.painting-copy p:last-child {
+  max-width: 720px;
+}
+
 @media (max-width: 820px) {
+  .site-header {
+    width: min(100% - 24px, 640px);
+    padding-top: 18px;
+  }
+
+  .site-header nav {
+    gap: 12px;
+  }
+
   .page-shell {
     width: min(100% - 24px, 640px);
     padding: 24px 0;
@@ -185,5 +340,21 @@ article p,
 
   .section-number {
     margin-bottom: 28px;
+  }
+
+  .paintings-page {
+    padding-top: 46px;
+  }
+
+  .painting-card {
+    grid-template-columns: 1fr;
+  }
+
+  .painting-mark {
+    min-height: 160px;
+  }
+
+  .painting-copy {
+    padding: 26px;
   }
 }
