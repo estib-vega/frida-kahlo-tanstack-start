@@ -1,9 +1,7 @@
 :root {
-  color: #1d1a16;
-  background: #f8f0de;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  color: #171014;
+  background: #fff4f8;
+  font-family: Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -16,9 +14,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background:
-    linear-gradient(90deg, rgba(0, 106, 78, 0.12) 0 18%, transparent 18% 100%),
-    linear-gradient(180deg, #f9f1dd 0%, #efe0bf 100%);
+  background: #fff4f8;
 }
 
 a {
@@ -34,12 +30,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(1120px, calc(100% - 32px));
+  width: min(1040px, calc(100% - 32px));
   margin: 0 auto;
   padding: 22px 0 0;
-  color: #1f2520;
+  color: #171014;
   font-size: 0.94rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .site-header a {
@@ -54,34 +50,34 @@ img {
 
 .site-header nav a {
   padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  color: #5a4735;
+  border-bottom: 1px solid transparent;
+  color: #6f4759;
 }
 
 .site-header nav a.active {
-  border-bottom-color: #d7472f;
-  color: #1d1a16;
+  border-bottom-color: #d63384;
+  color: #171014;
 }
 
 .page-shell {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1040px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 28px 0 40px;
+  padding: 32px 0 48px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
   gap: 48px;
   align-items: center;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 90px);
 }
 
 .kicker {
   margin: 0 0 16px;
-  color: #006a4e;
+  color: #d63384;
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -95,73 +91,65 @@ p {
 h1 {
   max-width: 8ch;
   margin-bottom: 24px;
-  color: #6b1d16;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 14vw, 9.5rem);
+  color: #171014;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(4rem, 13vw, 8.5rem);
   font-weight: 800;
-  line-height: 0.88;
+  line-height: 0.9;
 }
 
 .intro {
   max-width: 660px;
   margin-bottom: 0;
-  color: #3a3129;
-  font-size: clamp(1.12rem, 2.3vw, 1.55rem);
+  color: #45343c;
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   line-height: 1.55;
 }
 
 .portrait-card {
   margin: 0;
-  border: 1px solid rgba(80, 54, 36, 0.22);
-  background: #fff8e8;
-  box-shadow: 14px 18px 0 #d7472f;
+  border: 1px solid #171014;
+  background: #ffe3ee;
 }
 
 .portrait-card img {
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  filter: sepia(0.18) contrast(1.04);
+  filter: grayscale(1);
 }
 
 .portrait-card figcaption {
   padding: 14px 16px 16px;
-  color: #66533e;
+  border-top: 1px solid #171014;
+  color: #6f4759;
   font-size: 0.92rem;
 }
 
 .content-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 16px;
   margin: 32px 0 20px;
 }
 
 article {
-  min-height: 310px;
+  min-height: 300px;
   padding: 26px;
-  border-top: 6px solid #006a4e;
-  background: rgba(255, 250, 238, 0.78);
-}
-
-article:nth-child(2) {
-  border-top-color: #d7472f;
-}
-
-article:nth-child(3) {
-  border-top-color: #f1b51c;
+  border: 1px solid #171014;
+  background: #ffeef5;
 }
 
 .section-number {
   display: block;
   margin-bottom: 46px;
-  color: #947c57;
+  color: #ad6b89;
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   margin-bottom: 14px;
-  color: #1f2520;
+  color: #171014;
   font-size: 1.35rem;
   line-height: 1.15;
 }
@@ -169,19 +157,20 @@ h2 {
 article p,
 .fact-strip p {
   margin-bottom: 0;
-  color: #42382f;
+  color: #45343c;
   font-size: 1rem;
   line-height: 1.62;
 }
 
 .fact-strip {
   padding: 22px 26px;
-  background: #006a4e;
+  border: 1px solid #171014;
+  background: #d63384;
 }
 
 .fact-strip p {
   max-width: 760px;
-  color: #fff8e8;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -203,73 +192,32 @@ article p,
 
 .paintings-hero h1 {
   max-width: none;
-  font-size: clamp(4rem, 12vw, 8.5rem);
+  font-size: clamp(4rem, 12vw, 8rem);
 }
 
 .paintings-list {
   display: grid;
-  gap: 18px;
+  gap: 16px;
 }
 
 .painting-card {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  min-height: 230px;
+  grid-template-columns: 160px minmax(0, 1fr);
+  min-height: 220px;
   padding: 0;
-  border: 1px solid rgba(80, 54, 36, 0.2);
-  border-top: 0;
-  background: rgba(255, 250, 238, 0.82);
 }
 
 .painting-mark {
   display: grid;
-  min-height: 230px;
+  min-height: 220px;
   place-items: center;
   overflow: hidden;
-  color: #fff8e8;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.5rem;
+  border-right: 1px solid #171014;
+  background: #d63384;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3.25rem;
   font-weight: 800;
-  position: relative;
-}
-
-.painting-mark::before,
-.painting-mark::after {
-  content: "";
-  position: absolute;
-  inset: 24px;
-  border: 4px solid rgba(255, 248, 232, 0.36);
-}
-
-.painting-mark::after {
-  inset: 56px 34px;
-  border-width: 2px;
-  transform: rotate(-8deg);
-}
-
-.painting-mark span {
-  position: relative;
-  z-index: 1;
-}
-
-.painting-mark-green {
-  background: #006a4e;
-}
-
-.painting-mark-red {
-  background: #d7472f;
-}
-
-.painting-mark-gold {
-  background: #c99013;
-}
-
-.painting-mark-blue {
-  background: #1e5b7b;
-}
-
-.painting-mark-rose {
-  background: #8f2d4b;
 }
 
 .painting-copy {
@@ -279,22 +227,22 @@ article p,
 
 .painting-year {
   margin-bottom: 10px;
-  color: #947c57;
+  color: #ad6b89;
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .painting-copy h2 {
   margin-bottom: 8px;
-  color: #6b1d16;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 5vw, 4rem);
+  color: #171014;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.75rem);
 }
 
 .painting-location {
   margin-bottom: 18px;
-  color: #006a4e;
-  font-weight: 800;
+  color: #6f4759;
+  font-weight: 700;
 }
 
 .painting-copy p:last-child {
@@ -326,10 +274,6 @@ article p,
     font-size: clamp(4rem, 22vw, 7rem);
   }
 
-  .portrait-card {
-    box-shadow: 8px 10px 0 #d7472f;
-  }
-
   .content-grid {
     grid-template-columns: 1fr;
   }
@@ -351,7 +295,9 @@ article p,
   }
 
   .painting-mark {
-    min-height: 160px;
+    min-height: 150px;
+    border-right: 0;
+    border-bottom: 1px solid #171014;
   }
 
   .painting-copy {
